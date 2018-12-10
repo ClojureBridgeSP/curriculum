@@ -24,6 +24,31 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
   <body>
     <div class="reveal">
       <div class="slides">
+        <section>
+          <h2>Princípios de linguagens funcionais</h2>
+          <p>Ao invés de atualizar variáveis na memória, programas funcionam com composição de funções</p>
+        </section>
+
+        <section>
+          <h2>Imutabilidade</h2>
+          Ruby
+          <pre>
+            <code data-trim data-noescape>
+def oo_func(str)
+str.upcase!
+puts str
+end
+            </code>
+          </pre>
+          Clojure
+          <pre>
+            <code data-trim data-noescape>
+(def fp-func(str)
+(let [str2 (upper-case str)]
+(print str2)))
+            </code>
+          </pre>
+        </section>
       </div>
     </div>
 
